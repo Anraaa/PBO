@@ -2,18 +2,21 @@
 
 Materi dan catatan asistensi mata kuliah **Pemrograman Berorientasi Objek**.
 
-Repositori ini berisi rangkuman konsep, contoh kode, dan catatan praktikum yang dipakai saat sesi asistensi.
+Repositori ini berisi rangkuman konsep, contoh kode, slide, dan catatan praktikum yang dipakai saat sesi asistensi.
 
-## Topik
+## Materi
 
-- [x] **Pewarisan (inheritance)**
-  - `extends`, `super`, dan `@Override`
-  - Perbedaan override dan overload
-  - Access modifier `protected` dan kaitannya dengan pewarisan
-  - Komposisi sebagai pembanding pewarisan
-- [ ] Polymorphism
-- [ ] Abstract class dan interface
-- [ ] Exception handling
+| Pertemuan | Topik | Berkas |
+|---|---|---|
+| 8-9 | Pewarisan (inheritance) | [Modul lengkap](Pertemuan%208/01-Pewarisan.md) · [Catatan istilah](Pertemuan%208/Istilah-Pewarisan.md) · [Slide](Pertemuan%208/Week%208-9%20-%20Inheritance%20%28Basic%20%20Detail%20%29.pptx) |
+
+Materi per pertemuan ditambahkan bertahap.
+
+## Isi berkas
+
+- **`01-Pewarisan.md`** - modul utama: penjelasan bahasa awam, tiga langkah ngoding (`extends`, `super`, `@Override`), perbandingan override vs overload, access modifier, dan komposisi sebagai pembanding pewarisan.
+- **`Istilah-Pewarisan.md`** - catatan cepat istilah penting dengan analogi, plus tes diri singkat.
+- **`Week 8-9 - Inheritance (Basic  Detail ).pptx`** - slide presentasi sesi pewarisan.
 
 ## Struktur
 
@@ -22,10 +25,9 @@ PBO/
 ├── README.md
 └── Pertemuan 8/
     ├── 01-Pewarisan.md
-    └── Istilah-Pewarisan.md
+    ├── Istilah-Pewarisan.md
+    └── Week 8-9 - Inheritance (Basic  Detail ).pptx
 ```
-
-Materi per pertemuan ditambahkan bertahap.
 
 ## Menjalankan contoh
 
@@ -42,6 +44,12 @@ Kalau satu folder berisi beberapa class dengan nama yang sama, kompilasi tiap la
 javac -d out NamaFile.java
 java -cp out NamaFile
 ```
+
+## Rencana materi berikutnya
+
+- Polymorphism
+- Abstract class dan interface
+- Exception handling
 
 ## Catatan
 
