@@ -8,7 +8,7 @@ Repositori ini berisi rangkuman konsep, contoh kode, slide, dan catatan praktiku
 
 | Pertemuan | Topik | Berkas |
 |---|---|---|
-| 8-9 | Pewarisan (inheritance) | [Modul lengkap](Pertemuan%208/01-Pewarisan.md) · [Catatan istilah](Pertemuan%208/Istilah-Pewarisan.md) · [Slide](Pertemuan%208/Week%208-9%20-%20Inheritance%20%28Basic%20%20Detail%20%29.pptx) |
+| 8-9 | Pewarisan (inheritance) | [Modul lengkap](Pertemuan%208%20-%209/01-Pewarisan.md) · [Catatan istilah](Pertemuan%208%20-%209/Istilah-Pewarisan.md) · [Slide](Pertemuan%208%20-%209/Week%208-9%20-%20Inheritance%20%28Basic%20%20Detail%20%29.pptx) |
 
 Materi per pertemuan ditambahkan bertahap.
 
@@ -23,7 +23,7 @@ Materi per pertemuan ditambahkan bertahap.
 ```
 PBO/
 ├── README.md
-└── Pertemuan 8/
+└── Pertemuan 8 - 9/
     ├── 01-Pewarisan.md
     ├── Istilah-Pewarisan.md
     └── Week 8-9 - Inheritance (Basic  Detail ).pptx
