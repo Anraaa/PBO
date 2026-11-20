@@ -474,40 +474,4 @@ Cek pakai kalimat: "Mobil adalah mesin?" Aneh, berarti jangan. Contoh lain yang 
 
 Kebalikannya juga salah: memaksa komposisi untuk hal yang seharusnya berbagi atribut, misalnya `class Orang { Mahasiswa mhs; Dosen dsn; }`. Kalau yang dibutuhkan cuma atribut bersama, pakai induk bersama atau field biasa.
 
----
 
-## 9. Checklist pemahaman
-
-- [ ] Bisa menjelaskan pewarisan tanpa menyebut kata "mewarisi" (pakai analogi sendiri).
-- [ ] Bisa menentukan is-a vs has-a untuk 5 pasangan class.
-- [ ] Bisa menulis `extends`, `super(...)`, dan `@Override` tanpa melihat contoh.
-- [ ] Bisa menjelaskan kenapa field `private` induk tidak bisa diakses anak.
-- [ ] Bisa membedakan override dan overload dari signature-nya.
-- [ ] Bisa menjelaskan kaitan pewarisan dan polymorphism dalam satu kalimat.
-- [ ] Bisa mengubah `extends` yang salah menjadi komposisi dengan field.
-
----
-
-## 10. Catatan untuk asdos
-
-**Urutan penyampaian.** Jangan buka dengan definisi formal. Mulai dari copy-paste yang berantakan (Langkah 1), biarkan mahasiswa mengeluh, baru tawarkan solusinya. Rasa "ini ribet" itulah yang membuat pewarisan terasa masuk akal.
-
-**Momen demo yang paling nendang.** Di Langkah 2, ubah teks `perkenalan()` milik `Mahasiswa`, lalu jalankan ulang. Dua output berubah sekaligus, padahal file `Asdos` tidak disentuh. Diamkan dua detik, biasanya langsung ada yang "oh". Momen kedua: demo `gantiMesin()` di bagian komposisi, karena itu batas paling jelas antara pewarisan dan komposisi.
-
-**Pertanyaan yang hampir pasti muncul.**
-
-- *"Bedanya override dan overload?"* -> balik ke tabel bagian 4, tekankan parameter sama vs beda.
-- *"Kenapa harus `super()`?"* -> karena induk butuh data untuk hidup; anak tidak boleh mengisi field induk seenaknya.
-- *"Boleh extends dua class?"* -> tidak di Java; jelaskan singkat soal `interface` tanpa masuk detail.
-- *"Kapan pakai private atau protected?"* -> default aman: `private` + getter/setter; `protected` hanya kalau benar-benar perlu diakses turunan.
-- *"Kalau method induk tidak di-override, tetap kepakai?"* -> ya, itu inti warisan.
-- *"Kapan pakai komposisi?"* -> kalau hubungannya "punya", atau kalau bagiannya bisa diganti saat runtime.
-
-**Jebakan waktu praktikum.**
-
-- Compile error `duplicate class` sering muncul karena mahasiswa menaruh banyak class `Main` dengan nama sama di satu folder. Ajari `javac -d out`.
-- Mahasiswa sering lupa menambahkan parameter di `super(...)` setelah menambah field baru.
-- Kalau ada yang memakai `static` di dalam hierarki lalu bingung hasilnya, ingatkan bahwa `static` bukan bagian dari pewarisan object.
-- Kesalahan paling mahal: memaksa `extends` antar class yang cuma "mirip", misalnya `Dosen extends Mahasiswa`. Selalu balik ke tes "X adalah Y".
-
-**Penutup sesi.** Simpulkan dalam tiga kalimat: pewarisan menghapus duplikasi, syaratnya hubungan is-a, dan gunanya menyiapkan polymorphism. Tambahkan satu kalimat tentang komposisi: kalau hubungannya "punya", jangan dipaksa jadi warisan. Lalu beri satu tantangan kecil: *"besok coba bikin hierarki tiga level untuk tema bebas, minimal satu override dan satu method baru."*
